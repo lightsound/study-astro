@@ -9,9 +9,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "ts": "astro check && tsc --noEmit"
   },
   "dependencies": {
+    "@astrojs/node": "^5.0.1",
     "@astrojs/preact": "^2.0.0",
     "@astrojs/rss": "^2.1.0",
     "astro": "^2.0.2",

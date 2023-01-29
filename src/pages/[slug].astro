@@ -1,0 +1,13 @@
+---
+import { getEntryBySlug } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+const { slug } = Astro.params;
+const entry = await getEntryBySlug(
+  "posts",
+  slug as CollectionEntry<"posts">["slug"]
+);
+const { Content } = await entry.render();
+---
+
+<Content />
