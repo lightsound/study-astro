@@ -2,6 +2,8 @@
 import { getCollection } from "astro:content";
 import BlogPost from "../components/BlogPost.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+export const prerender = true;
 const allPosts = await getCollection("posts");
 const pageTitle = "My Astro Learning Blog";
 ---
