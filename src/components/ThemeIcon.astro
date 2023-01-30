@@ -19,7 +19,7 @@
 <script>
   const theme = (() => {
     if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme") ?? "light";
+      return localStorage.getItem("theme") ?? "dark";
     }
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "dark";
