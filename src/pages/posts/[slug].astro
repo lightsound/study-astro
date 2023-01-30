@@ -4,8 +4,8 @@ import type { CollectionEntry } from "astro:content";
 
 const { slug } = Astro.params;
 const entry = await getEntryBySlug(
-  "post",
-  slug as CollectionEntry<"post">["slug"]
+  "posts",
+  slug as CollectionEntry<"posts">["slug"]
 );
 const { Content } = await entry.render();
 ---
