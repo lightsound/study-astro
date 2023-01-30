@@ -14,11 +14,12 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^2.0.0",
-    "@astrojs/node": "^5.0.1",
     "@astrojs/preact": "^2.0.0",
     "@astrojs/rss": "^2.1.0",
     "astro": "^2.0.0",
-    "preact": "^10.6.5",
+    "preact": "^10.6.5"
+  },
+  "devDependencies": {
     "prettier": "^2.8.3",
     "prettier-plugin-astro": "^0.8.0"
   }
